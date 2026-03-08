@@ -1,0 +1,194 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Journal de bord final (Passe Ton Hack)</title>
+</head>
+<body>
+    <header class="header">
+        <section style="display: flex; align-items: center; gap: 20px;">
+            <a href="../index.html">Accueil</a>
+            <a href="merlin-gohier.html">Merlin</a>
+            <a href="adam-dira.html">adam</a>
+            <a href="jawad-atlassi.html">Jawad</a>
+            <a href="ahmed-kaddouri.html">Ahmed</a>
+            <a href="ines-ahmidou.html">Ines</a>
+        </section>
+        <section style="margin: 0 400px 0 0;">
+            <p style="margin: 5px; ">Score : 690</p>
+        </section>
+    </header>
+    <main class="content_2">
+        <div class="right">
+            <h4 id="sommaire">Somaire</h4>
+            <hr style="border: 1px solid #ffffff46; margin: 10px 0; width: 100%;">
+            <ul style="list-style: none; padding: 0;">
+                <li style="margin-bottom:10px"><a href="#p1">Problématique 1</a>
+                    <ul style="list-style: none; padding-left: 15px;">
+                        <li><a href="#p1-desc">Description du challenge</a></li>
+                        <li><a href="#p1-etapes">Étapes de résolution</a></li>
+                    </ul>
+                </li>
+                <li style="margin-bottom:10px"><a href="#p2">Problématique 2</a>
+                    <ul style="list-style: none; padding-left: 15px;">
+                        <li><a href="#p2-desc">Description du challenge</a></li>
+                        <li><a href="#p2-etapes">Étapes de résolution</a></li>
+                    </ul>
+                </li>
+                <li style="margin-bottom:10px"><a href="#p3">Problématique 3</a>
+                    <ul style="list-style: none; padding-left: 15px;">
+                        <li><a href="#p3-desc">Description du challenge</a></li>
+                        <li><a href="#p3-etapes">Étapes de résolution</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1>Portfolio Merlin Gohier</h1>
+            <div class="pb">
+            <h2 id="p1">PROBLÉMATIQUE 1 - Comment on décrypte une suite de nombre en ascii ?</h2>
+            <div class="challenge">
+                <div class="explication">
+                    <h3 id="p1-desc">Description du challenge </h3>
+                    <p>En analysant un système de données, vous vous êtes rendu compte que la Polskavie est en train de développer un tout nouveau système en deux dimensions: EVLang.
+                        Ce système rend tous nos outils d'analyse classique inutiles. Afin de conserver notre avantage stratégique, vous devez analyser le programme présent pour trouver le mot de passe à charger en mémoire permettant d'accéder au drapeau.
+                        On vous fournit un interpréteur et une documentation.
+                        Format de la réponse : FLAG{réponse}</p>
+                </div>
+                <div>
+                    <h3 id="p1-etapes">Étapes de résolution :</h3>
+                    
+                    <div>
+                        <p>Dans un premier temps, on observe le programme fourni dans l'interpréteur EVLang. On remarque que les instructions sont codées en ASCII.</p>
+                        <img class="img" src="../assets/eleves/merlin-gohier/p1_01.png" alt="instruction">
+                        <a style="color: rgb(113, 113, 255);" href="https://www.passetonhack.fr/api/storage/challenges/ddf07581-623e-4a82-a8f0-304905427f29/ ">https://www.passetonhack.fr/api/storage/challenges/ddf07581-623e-4a82-a8f0-304905427f29/ </a>
+                    </div>
+                    <div>
+                        <p>En analysant les instructions, on remarque que les nombres sont convertis en caractères ASCII, que l'on va ajouter dans une pile se modifiant selon l'élément rencontré ci-dessous.</p>
+                        <img class="img" src="../assets/eleves/merlin-gohier/p1_02.png" alt="conversion">
+                        <a style="color: rgb(113, 113, 255);" href="https://www.passetonhack.fr/api/storage/challenges/ddf07581-623e-4a82-a8f0-304905427f29/doc.html">https://www.passetonhack.fr/api/storage/challenges/ddf07581-623e-4a82-a8f0-304905427f29/doc.html</a>
+                    </div>
+                    <div>
+                        <p>Pour cela j' ai utilisé un convertisseur pour décoder les nombres en caractères ASCII (<a style="color: rgb(113, 113, 255);" href="https://www.ascii-code.com/fr">https://www.ascii-code.com/fr</a>). <br>
+                        En décodant les nombres, on obtient le FLAG.</p>
+                        </p>
+                    </div>
+                    <div>  
+                        <h3>Mes difficultés recontrée :</h3>
+                        <p>La principale difficulté que j'ai rencontrée était de comprendre comment les instructions étaient codées en ASCII et comment les convertir pour obtenir le mot de passe. Cependant, en utilisant un convertisseur en ligne, j'ai pu surmonter cette difficulté et trouver le FLAG.</p>
+                    </div>
+                    <div>
+                    <h3>ce que j' ai appris :</h3>
+                    <nav style="display: flex; flex-direction: column; gap: 10px; margin-left: 10px; margin-top: 20px; margin-bottom: 20px;">
+                    <li>Comment fonctionne le codage ASCII</li>
+                    <li>Comment déchiffrer un message codé en ASCII</li>
+                    <li>A bien connaitre le système du pile</li>
+                    </nav>
+                </div>
+                    <div>
+                        <h3>Pour le grand oral</h3>
+                        <p>Je peux présenter ma démarche de résolution du challenge, en expliquant comment j'ai décodé les nombres en ASCII et comment j'ai trouvé le FLAG.</p>
+                    </div>
+                    <p><a href="#sommaire">Retour au sommaire</a></p>
+                      
+                </div>
+                
+                </div>
+            </div>
+            <div class="pb">
+            <h2 id="p2">PROBLÉMATIQUE 2 - En quoi la possession d'un back end d’un site web permet de rapidement trouver un faille dans le site web ?</h2>
+            <div class="challenge">
+                <div class="explication">
+                    <h3 id="p2-desc">Description du challenge</h3>
+                    <img style="margin-top: 10px;" class="img" src="../assets/eleves/merlin-gohier/p2_01.png" alt="description du challenge">
+                    <p>image issue du site, passe ton hack</p>
+                </div>
+                <div>
+                    <h3 id="p2-etapes">Étapes de résolution :</h3>
+                    <div>
+                        <p>Tout d'abord, analyser le site fourni</p>
+                        <img class="img" src="../assets/eleves/merlin-gohier/p2_03.png" alt="question">
+                    </div>
+                    <div>
+                        <p>J'ai tout d'abord analysé le backend fourni et j'ai remarqué qu'il y avait un problème dans la vérification où nous pouvons faire passer une requête par l'URL</p>
+                        <img class="img" style="width: 50%;" src="../assets/eleves/merlin-gohier/p2_02.png" alt="backend">
+                    </div>
+                    <div>
+                        <p> Puis j'ai essayé de trouver la bonne requête, puis je me suis aidé de ChatGPT pour corriger mes erreurs en me les expliquant. Ensuite, j'ai réussi à trouver les réponses à toutes les questions et donc le flague (j'ai perdu la requete).</p>
+                        </p>
+                    </div>
+                    <div>  
+                        <h3>Mes difficultés recontrée :</h3>
+                        <p>j' ai eu du mal à comprendre comment les requêtes fonctionnaient dans le backend, et j'ai eu du mal à trouver la bonne syntaxe pour accéder aux réponses.</p>
+                    </div>
+                    <div>
+                    <h3>ce que j' ai appris :</h3>
+                    <nav style="display: flex; flex-direction: column; gap: 10px; margin-left: 10px; margin-top: 20px; margin-bottom: 20px;">
+                    <li>Qu'on peut manipuler les requêtes HTTP pour accéder à des ressources non autorisées</li>
+                    <li>A bien comprendre les mécanismes de base du backend</li>
+                    </nav>
+                </div>
+                    <div>
+                        <h3>Pour le grand oral</h3>
+                        <p>Je peux mettre en rapport la resolution du challenge avec les notions de sécurité informatique, notamment la manipulation des requêtes HTTP et l'identification des failles dans les systèmes backend.</p>
+                    </div>
+                    <p><a href="#sommaire">Retour au sommaire</a></p>
+                      
+                </div>
+                
+                </div>
+            </div>
+            <div class="pb">
+            <h2 id="p3">PROBLÉMATIQUE 3 - Comment une faille dans un site peut détruire un système mis en place ?</h2>
+            <div class="challenge">
+                <div class="explication">
+                    <h3 id="p3-desc">Description du challenge </h3>
+                    <img style="margin-top: 10px;" class="img" src="../assets/eleves/merlin-gohier/p3_01.png" alt="description du challenge">
+                    <p>image issue du site, passe ton hack</p>
+                </div>
+                <div>
+                    <h3 id="p3-etapes">Étapes de résolution :</h3>
+                    
+                    <div style="display: flex;
+                    flex-direction: column;
+                    gap: 20px;">
+                        <p>Dans un premier temps, de faire une transaction et j'ai remarqué qu'ils avaient plusieurs étapes dans une transaction. Je me suis dit si je fais plusieurs transactions et là j'ai remarqué que si j'étais assez rapide sans attendre la fin de la transaction, je peux dupliquer de l'argent. </p>
+                        <img class="img" style="width: 50%;" src="../assets/eleves/merlin-gohier/p3_02.png" alt="instruction">
+                        <a style="color: rgb(113, 113, 255);" href="https://www.passetonhack.fr/a20960f4-9d66-4096-bdf3-354b2e9795e1/dashboard.html ">https://www.passetonhack.fr/a20960f4-9d66-4096-bdf3-354b2e9795e1/dashboard.html</a>
+                    </div>
+                    
+                    <div>
+                        <p>Donc j'ai utilisé un autoclicker pour voir et j'ai eu assez d'argent pour acheter le flag.</p>
+                        <img class="img" style="width: 40%;" src="../assets/eleves/merlin-gohier/p3_03.png" alt="backend">
+                        <p style="font-size: 20px;">logiciel : GT Auto Clicker</p>
+                    </div>
+                    <div>
+                        <h3>Mes difficultés recontrée :</h3>
+                        <p>J'ai eu du mal à comprendre comment fonctionnait le système de transactions et comment les autoclickers pouvaient être utilisés pour dupliquer de l'argent.</p>
+                    </div>
+                    
+                    <div>
+                    <h3>ce que j' ai appris :</h3>
+                    <nav style="display: flex; flex-direction: column; gap: 10px; margin-left: 10px; margin-top: 20px; margin-bottom: 20px;">
+                    <li>Comment utiliser un autoclicker pour automatiser des actions répétitives</li>
+                    <li>Comment identifier les failles de sécurité dans les systèmes de gestion de fonds</li>
+                    </nav>
+                </div>
+                    <div>
+                        <h3>Pour le grand oral</h3>
+                        <p>Je peux mettre en rapport la resolution du challenge avec les notions de cyber sécurité</p>
+                    </div>
+                      
+                </div>
+                
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p style="margin: 10px;">© 2026 Passe Ton Hack - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
